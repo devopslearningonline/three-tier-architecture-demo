@@ -42,4 +42,4 @@ jobs:
 
       - name: Deploy robot-shop using Helm
         run: |
-          helm install robot-shop ./AKS/helm --namespace robot-shop .
+           helm upgrade --install robot-shop ./AKS/helm --namespace robot-shop --create-namespace
