@@ -43,4 +43,4 @@ jobs:
       - name: Deploy robot-shop using Helm
         run: |
           kubectl create ns robot-shop
-          helm upgrade install robot-shop --namespace robot-shop .
+          helm install robot-shop --namespace robot-shop .
